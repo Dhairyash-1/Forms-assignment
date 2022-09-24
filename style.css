@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 2rem;
+}
+
+body {
+    background: url(bg-intro-desktop.png), hsl(0, 100%, 74%);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    width: 100%;
+    margin-right: 2rem;
+}
+
+
+.left .text-box h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-weight: 700;
+
+}
+
+.left .text-box .para {
+    font-size: 1.7rem;
+    color: white;
+}
+
+
+/* right side code  */
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(248, 32%, 49%);
+    height: 6.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.notification h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.notification h2 span {
+    font-weight: 500;
+    color: hsl(246, 25%, 77%);
+}
+
+.form-container {
+    background: #fff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 4rem;
+}
+
+
+
+.form-container form .user-details .input-box {
+
+    margin-bottom: 2rem;
+   
+}
+
+.form-container form .user-details .input-box input {
+    height: 6.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: .1rem solid lightgray;
+    padding: 1rem 0 1rem 3rem;
+    border-radius: 1rem;
+
+}
+
+.form-container form .user-details .input-box input:focus{
+    border: .2rem solid hsl(249, 10%, 26%);
+}
+
+.form-container form .user-details .btn {
+    padding-bottom: 2rem;
+
+}
+
+.form-container form .user-details .btn input {
+    background: hsl(154, 59%, 51%);
+    height: 5.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    letter-spacing: .2rem;
+}
+.form-container form .user-details .btn input:hover{
+    background: hsl(154, 94%, 35%);
+}
+.termslink {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.18rem;
+    color: hsl(246, 25%, 77%);
+}
+
+.termslink span {
+    color: hsl(0, 100%, 74%);
+}
+
+
+
+
+
+
+
+@media(max-width:1000px) {
+    html {
+        font-size: 55%;
+    }
+
+    @media(max-width:767px) {
+
+        .container {
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .left .text-box {
+            text-align: center;
+            padding-bottom: 8rem;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    html {
+        font-size: 50%;
+    }
+}
